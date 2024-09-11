@@ -1,0 +1,239 @@
+* {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+
+h1 {text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200p;
+    margin: 0 auto;
+}
+header {
+    background: #333;
+    color: white;
+    padding:  10px 0;
+    position: fixed;
+    width:  100%;
+    max-height: 10%;
+    top: 0;
+    z-index: 1000;
+}
+.upper {
+    background-image: url(owa.jpg);
+    background-position: 50px;
+    background-size: 1455px;
+}
+.style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: x-large;
+    font-size: 40px;
+    
+}
+
+#frist{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    
+}
+
+#bbb {
+    
+}
+.sys {
+    font-size: 45px; text-align: center;
+}
+.sos {
+    text-align: center; font-size: x-large;
+}
+#hero {
+  
+    position: center;
+}
+.cat {
+    text-align: center; font-size: 22px; 
+}
+.button {
+    background-color: #020000; /* Black */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.button:hover {
+    transform: translateY(-10px);
+}
+
+#about .container {
+    background-color: grey; text-align: center; 
+}
+#features .container {
+text-align: center;
+}
+.gg {
+    text-align: left;
+    font-size: x-large;
+}
+.dd {
+    text-align: right;
+    font-size: x-large;
+}
+header .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li {
+    margin: 0 10px;
+}
+header nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+#about {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#features {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#features .features-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: warp;
+}
+.features {
+    flex:  1;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+
+}
+.features i {
+    font-size:  2rem;
+    margin-bottom:  10px;
+}
+.features:hover {
+    background: white;
+    color: #000;
+}
+
+#products {
+    background: white;
+    text-align: center;
+}
+.products-card {
+    display: inline-block;
+    width: 30%;
+    margin:  20px;
+    padding:  20px;
+    background: #bdbdbd;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform; 0.3s;
+}
+.products-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius:  10px;
+}
+.products-card h3 {
+    margin:  10PX 0;
+}
+.products-card:hover {
+    transform: translateY(-10px);
+}
+#contact {
+    background: white;
+    text-align: center;
+    padding: 40px 0;
+}
+.address-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.address {
+    flex: 1;
+    padding: 20px;
+}
+.map {
+    flex: 1;
+    padding: 20px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align:  center;
+    padding: 20px 0;
+    
+}
+footer .social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social li {
+    margin: 0 10px;
+}
+footer .social li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+/* responsiv */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin:  10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    #features .features-row {
+        flex-direction: column;
+    }
+
+    .products-card {
+        width: 80%;
+    }
+    .address-map {
+        flex-direction: column;
+    }
+}
